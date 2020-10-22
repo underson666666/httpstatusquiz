@@ -1,7 +1,10 @@
 from flask import Flask, render_template
 import csv
 import random
+import sys
+import os
 
+sys.path.append(os.path.dirname(__file__))
 from const import *
 
 app = Flask(__name__)
